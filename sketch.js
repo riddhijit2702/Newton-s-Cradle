@@ -60,4 +60,11 @@ Matter. Body.applyForce(bobObject1.body,bobObject3.body.position,{x:-20,y:-20})
   }
 }
 
+function mouseDragged(){
+ 
+    Matter.Body.setPosition(this.bobObject1.body,{x:mouseX,y:mouseY});
 
+}
+function mouseReleased(){
+ bodyA.fly()
+}
